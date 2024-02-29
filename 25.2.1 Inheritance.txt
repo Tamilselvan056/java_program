@@ -1,0 +1,55 @@
+class CricketPlayer {                      //Base class
+    String playerName;
+    String teamName;
+     void setPlayerData(String playerName, String teamName){
+        this.playerName=playerName;
+        this.teamName=teamName;
+     }
+     void displayPlayerData() {
+      System.out.println(“ Player Name:”+playerName);
+      System.out.println(“Team Name:”+teamName);
+     }
+}
+class Batsman extends CricketPlayer {                      //Derived class 1
+    int hScore;
+    float batAvg;
+
+     void setBatsmanData(int hScore, float batAvg){
+        this.hScore=hScore;
+        this.batAvg=batAvg;
+     }
+     void displayBatsmanData(){
+      System.out.println(“ Highest Score:”+hScore);
+      System.out.println(“Batting Average:”+batAvg);
+     }
+}
+class Bowler extends CricketPlayer {                   //Derived class  2
+    int wickets;
+    float bowlAvg;
+     void setBowlerData(int wickets, float bowlAvg){
+        this.wickets=wickets;
+        this.bowlAvg=bowlAvg;
+     }
+     void displayBowlerData() {
+      System.out.println(“ No. of Wickets:”+wickets);
+      System.out.println(“Bowling Average:”+bowlAvg);
+     }
+}
+
+
+
+public class HInherDemo{
+   public static void main(String args[]){
+       Batsman B1=new Batsman();        //Base Class Object   
+       Bowler B2=new Bowler();
+       B1.setPlayerData(“Sachin”, “India”);
+       B1.setBatsmanData(200, 84.5);
+       B2.setPlayerData(“Bumra”, “India”);
+       B2.setBowlerData(140, 6.75);
+       B1.displayPlayerData();
+       B1.displayBatsmanData();
+       B2.displayPlayerData();
+       B2.displayBowlerData();   
+    }
+}
+

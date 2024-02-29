@@ -1,0 +1,19 @@
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+public class DateTimeExample {
+    public static void main(String[] args) {
+        LocalDate LD = LocalDate.now();
+        LocalTime LT = LocalTime.now();
+        LocalDateTime LDT = LocalDateTime.now();
+		
+DateTimeFormatter DTF = DateTimeFormatter.ofPattern
+				("dd-MM-yy");
+	String formatString = LDT.format(DTF);
+	System.out.println(LD);
+	System.out.println(LT);
+	System.out.println(LDT);
+	System.out.println(formatString);
+	} 
+}

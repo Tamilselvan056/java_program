@@ -1,0 +1,55 @@
+class ThreadA extends Thread
+{   	public void run()  	{
+		try
+		{  	for(int i = 0;i<5;i++)
+			{
+			Thread.sleep(1000);
+			System.out.println("Executing first thread..");
+			}
+		}
+		catch(InterruptedException ex)
+		{
+			System.out.println("Thread Interrupted...");
+		}  	}     
+}
+class ThreadB extends Thread
+{   public void run()   {   
+	try
+	{     for(int i = 0;i<5;i++)
+	      {
+	            Thread.sleep(2000);
+	            System.out.println("Executing second thread..");
+	      }
+	}
+	catch(InterruptedException ex)
+	{
+                         System.out.println("Thread Interrupted...");
+	}     	
+     }   
+}
+class demo3
+{       public static void main(String args[])
+        {
+	ThreadA t1 = new ThreadA();
+	t1.start();
+	try
+	{
+ 	      t1.join();
+	      System.out.println("End of first thread...");
+	}
+	catch(Exception e)
+	{
+	      System.out.println("Thread Interrupted...");
+	}	
+ThreadB t2 = new ThreadB();
+t2.start();
+try{       
+         t2.join();
+         System.out.println("End of second thread...");  
+}
+	catch(Exception e){
+		System.out.println("Thread Interrupted...");
+	}  	
+       }    
+}
+

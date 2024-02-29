@@ -1,0 +1,13 @@
+abstract class Person{  
+  abstract void eat();  
+}  
+class AnonymousExample {  
+	public static void main(String args[]){  
+		Person obj=new Person(){  
+			void eat(){
+				System.out.println(“Nice Fruits");
+			}  
+		};  
+		obj.eat();  
+	}  
+}

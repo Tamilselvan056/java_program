@@ -1,0 +1,10 @@
+ public class Employee {
+        	String name = “Ram Kumar";
+	int    empID = 1205;
+	int    age;
+ 
+      public void displayEmployee() {
+ 	System.out.println(“Employee Name: "+name);
+	 System.out.println(“Employee Id:”+empID);
+    }   
+}

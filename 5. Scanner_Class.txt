@@ -1,0 +1,10 @@
+import java.util.Scanner; //import Scanner class from util package
+public class ReadSomeInput {
+        public static void main(String[] args) {
+               Scanner console = new Scanner(System.in);
+               System.out.print("Enter your Name : ");
+               String name = console.next();
+               System.out.println(“Hi, ” +name+“ . Welcome to the Training Program ...”);
+               console.close();
+    }
+}

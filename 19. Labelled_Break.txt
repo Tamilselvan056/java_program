@@ -1,0 +1,15 @@
+ class LabeledBreakApp{
+	public static void main(String args[]){
+		first:  // First label
+		for (int i = 0; i < 3; i++) {
+		             second:     // Second label
+			for (int j = 0; j < 3; j++) {
+				if (1== i && 1 == j) {
+					break first;     // Using break statement with label
+				}
+				System.out.println(i + " " + j);
+		               }
+	                }
+              }
+ }
+

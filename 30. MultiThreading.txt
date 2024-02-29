@@ -1,0 +1,34 @@
+public class Thread1{
+    public static void main(String a[]){
+        try {
+                for(int j=5;j>0;j--) {
+	    System.out.println("Main Thread : "+j);
+ 	    Thread.sleep(1000);
+	}
+        }catch(InterruptedException e) { }
+        System.out.println("Main Thread Exiting");
+    }
+}
+
+class ThreadA2 extends Thread {
+    public void run() {
+        try {
+ 	for(int i = 0;i<5;i++) {
+	    Thread.sleep(5000);
+	    System.out.println("Executing second thread..");
+	}
+        }catch(InterruptedException ex){
+	System.out.println("Thread Interrupted...");
+        }
+    }
+}
+class demo2
+{
+	public static void main(String args[])
+	{
+		ThreadA1 t1 = new ThreadA1();
+		t1.start();
+		ThreadA2 t2 = new ThreadA2();
+		t2.start();
+	}
+}

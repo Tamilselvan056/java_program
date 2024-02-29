@@ -1,0 +1,15 @@
+class NestedWhileAPP{
+	public static void main (String args[]){   
+		int outerLoop=1,innerLoop=1;
+		whlie(outerLoop<=5){
+			while(innerLoop<=5){	
+			              System.out.print(“*”);
+				innerLoop++;
+			}
+		              System.out.println(“ “);
+			outerLoop++;
+			innerLoop=1;
+		}
+	}
+}
+

@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class r2
+{	public static void main(String Args[])	{
+		int a,b,c;
+		System.out.println("Enter 2 Nums: ");
+		Scanner inp = new Scanner(System.in);
+		a=inp.nextInt();
+		b=inp.nextInt();
+		c=a+b;
+		System.out.println("a+b: "+c);
+	}}

@@ -1,0 +1,14 @@
+// Java program to demonstrate user defined exception.
+class InvalidAgeException extends Exception {  
+	InvalidAgeException(String s) {  
+		// Call constructor of parent Exception
+		super(s);  
+	}  
+} 
+class ExceptionDemo{  
+     static void validate(int age)throws InvalidAgeException {  
+     if(age<18)  
+      throw new InvalidAgeException("not eligible");  
+     else  
+      System.out.println(“Eligible");  
+   }      

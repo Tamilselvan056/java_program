@@ -1,0 +1,18 @@
+// This example demonstrates user defined Generic methods
+class GenericMethod    { 
+      static <T> void genericDisplay (T element)  {      
+            // A Generic method example 
+            System.out.println(element); 
+            System.out.println(element.getClass().getName() +" = " + element); 
+      } 
+      
+public static void main(String[] args) 	{           
+            // Driver method 
+            // Calling generic method with Integer argument 
+            genericDisplay(11); 
+            // Calling generic method with String argument 
+            genericDisplay(“Test"); 
+            // Calling generic method with double argument 
+           genericDisplay(1.0); 
+      } 
+}

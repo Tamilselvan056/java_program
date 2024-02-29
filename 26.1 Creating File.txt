@@ -1,0 +1,28 @@
+// Java program to demonstrate to create directory
+import java.nio.file.*;
+class CreateDirectory{ 
+       public static void main(String args[]) { 
+             try{
+Path path = Paths.get("C:\\Users\\Senthil\\eclipse-workspace\\Sample\\src\\FileStream\\SampleDirectory");
+                          if (!Files.exists(path)) {
+                                 Files.createDirectory(path);
+                                 System.out.println("Directory created");
+                          } else {
+                                 System.out.println("Directory already exists");
+                          }
+                 }catch (IOException e) {    System.out.println(e); //Exception details      }  
+	} }
+// Java program to demonstrate to create file
+import java.nio.file.*;
+class CreateFile{ 
+       public static void main(String args[]) { 
+            try{
+    Path path1 = Paths.get("C:\\Users\\Senthil\\eclipse-workspace\\Sample\\src\\FileStream\\Sample.txt");
+	         if (!Files.exists(path1)) {
+	              Files.createFile(path1);
+                            System.out.println("File created");
+                       } else {
+                                  System.out.println("File already exists");
+                       }
+               }catch (IOException e) {   System.out.println(e); //Exception details     }        
+     }   }

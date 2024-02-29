@@ -1,0 +1,35 @@
+/*This abstract code illustrates the upcasting. */
+class A { 
+} 
+
+class B extends A { 
+}
+
+ class Demo {    
+         public static void main(String[] args) {
+                A a = new B();      //upcasting      
+         }
+ }
+/*This example demonstrates method overriding**/
+ class Vehicle {
+    void run() {
+     System.out.println(“Vehicle is running”);
+    }
+}
+class Truck extends Vehicle {
+    void run()     {
+     System.out.println(“Truck is running”);
+    }
+}
+class OverrideDemo
+{
+    public static void main(String args[])
+   {
+
+       Vehicle obj = new Vehicle();
+       obj.run();  //Vehicle class run () method 
+       Vehicle obj = new Truck();
+       obj.run();   //Truck class run () method 
+
+   }
+}

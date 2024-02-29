@@ -1,0 +1,8 @@
+class SimpleArithmetic {
+	public static void main(String args[]){
+	
+		int result=75/0;  //exception occur
+		 System.out.println(“Arithmetic Operation result: “+ result);
+		…. 
+	}
+ }

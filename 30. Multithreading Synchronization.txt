@@ -1,0 +1,33 @@
+package threading;
+class fivetable extends Thread {
+      public synchronized void run() {
+            for(int i =1;i<=5;i++)
+                  System.out.println(i + " Fives are" + (i * 5));
+      }  
+}
+class seventable extends Thread {
+      public synchronized void run() {
+            for(int i =1;i<=5;i++)
+                  System.out.println(i + " Sevens are" + (i * 7));
+      }  
+}
+class thirteentable extends Thread {
+      public synchronized void run() {
+            for(int i =1;i<=5;i++)
+                  System.out.println(i + " Thirteens are" + (i * 13));
+      }    
+}
+class sync
+{	public static void main(String arg[])
+	{
+		fivetable f;
+		seventable s;
+		thirteentable t;
+		f = new fivetable();
+		s = new seventable();
+		t = new thirteentable();
+		f.start();
+		s.start();
+		t.start();
+	}    
+}

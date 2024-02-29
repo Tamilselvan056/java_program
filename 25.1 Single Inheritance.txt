@@ -1,0 +1,21 @@
+class Employee {                  //parent class
+	String empName;
+    	int empId;
+     	void setData(String name, int id){   // base class method
+        		empName=name;
+        		empId=id;
+     	}
+     	void displayData(){                               // base class method
+      		System.out.println(“Employee Name:”+empName);
+      		System.out.println(“ID:”+empId);
+     	}
+}
+class Manager extends Employee {            //child class
+	String empDept;
+	void setDept(String dept) {              //sub class method
+        		empDept = dept;
+     	}
+     	void displayDept(){		        //sub class method					
+        		System.out.println(“Department:”+dept);
+     	}
+}

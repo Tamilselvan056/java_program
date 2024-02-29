@@ -1,0 +1,11 @@
+// Java program to demonstrate to copy a file
+class MoveFileDirectory { 
+   public static void main(String args[]) { 
+Path source = Paths.get("C:\\Users\\Senthil\\eclipse-workspace\\Sample\\src\\FileStream\\output.txt");
+Path target = Paths.get("C:\\Users\\Senthil\\eclipse-workspace\\Sample\\src\\FileStream\\Sample.txt");
+              try {
+System.out.println(source+"   "+ “Moved to:"+"   "+ Files.move(source, target,StandardCopyOption.REPLACE_EXISTING));
+             } // Catch block to handle the exceptions
+             catch (IOException e) {  System.out.println(e);          }
+    }
+}        

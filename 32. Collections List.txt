@@ -1,0 +1,33 @@
+import java.util.*;
+public class List {
+      public static void main(String[] args) {
+            // creating an empty LinkedList
+            Collection<String> list = new LinkedList<String>();
+            // use add() method to add elements in the list
+            list.add("Vy");
+            list.add("Tc");
+            list.add("Dc");
+            // Output the present list
+            System.out.println("The list is: " + list);
+	
+// Adding new elements to the end
+list.add("Last");
+list.add("Element");
+// printing the new list
+System.out.println("The new List is: " + list);
+System.out.println();
+// remove a particular element
+list.remove("Last");
+// print modified set1
+System.out.println("List after removing Last : " + list);
+            // Create an iterator for the list using iterator() method
+            Iterator<String> iter = list.iterator();
+            // Displaying the values after iterating through the list
+            System.out.println("\nThe iterator values" + " of list are: ");
+            while (iter.hasNext()) {
+	   System.out.print(iter.next() + " ");
+            }
+      }
+}
+
+

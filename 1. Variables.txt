@@ -1,0 +1,7 @@
+class VariableApp {    
+	int mark = 95 ;//instance variable
+	static char grade = ‘S’;	// static variable  
+	public static void main(String[] args) {         
+              		   float average=95.0  // local variable   
+         	}
+ }

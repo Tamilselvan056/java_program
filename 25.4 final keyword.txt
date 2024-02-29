@@ -1,0 +1,45 @@
+/*This program demonstrates the use of final keyword */
+public class Sample  {
+   final double pi;
+   public Sample()   {
+    pi = 3.14;
+  }
+  
+public Sample(double pi)  {
+    this.pi = pi;
+  }
+public static void main(String[] args) {
+   		Sample obj = new Sample(22.0/7.0);
+   		System.out.println(obj.pi);
+ 	}
+}
+/* This program demonstrates the use of final keyword*/
+class Base  { 
+    public final void display(String s) {
+      System.out.println(s);
+    } 
+}
+
+class Sample extends Base {
+  	public void display(String s)    {
+    		System.out.println(s);
+   	} public static void main(String args[]) {
+     		Sample obj = new Sample();
+     		obj.display(“TRY ME”);
+  	} 
+ }
+/*This program demonstrates the use of final keyword */
+final class Base  { 
+    public final void display(String s)     {
+      System.out.println(s);
+    } 
+}
+class Sample extends Base {
+  public void display(String s) {
+    System.out.println(s);
+   }
+public static void main(String args[])  {
+     		Sample obj = new Sample();
+     		obj.display(“TRY ME”);
+  	} 
+ }

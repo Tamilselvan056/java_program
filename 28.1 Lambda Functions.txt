@@ -1,0 +1,12 @@
+interface Welcome{  
+    public String welcomeMessage();  
+}  
+public class LambdaExpressionExample{  
+	public static void main(String[] args) {  
+		Welcome obj=()->{  
+			return “Welcome to Learning!";  
+		};  
+		System.out.println(obj.welcomeMessage());  
+	}  
+} 
+
